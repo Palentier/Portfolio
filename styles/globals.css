@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;1,700&display=swap')p;
 
 :root {
-  --bg-color: #090E16;
+  --bg-color: #161616;
   --text-color: #f8f8f2;
 }
 body,
@@ -24,6 +24,152 @@ html {
   box-sizing: border-box;
 }
 
+nav {
+  display: flex;
+  align-items: center;
+}
+
+
 .navbar-left {
   margin-left: 20rem;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  z-index: 200;
+}
+
+.navbar-items {
+  margin-left: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-item {
+  display: flex;
+  align-items: center;
+  margin-right: 24px;
+  text-decoration: none;
+  cursor: pointer;
+  user-select: none;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  margin-right: 15rem;
+}
+
+footer {
+  background-color: #2d2d2d;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5rem;
+  padding-bottom: 5rem
+}
+
+.footer-info {
+  margin-left: 20rem;
+}
+
+.landing-section {
+  margin-top: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 24vw;
+  margin-right: 24vw;
+  flex-direction: column;
+}
+
+.landing-section .right-landing Image{
+  width:500px;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none
+}
+@media screen and (max-width:800px){
+  .landing-section .right-landing Image{
+      margin-top:5vh
+  }
+}
+@media screen and (max-width:500px){
+  .landing-section .right-landing Image{
+      width:400px
+  }
+}
+@media screen and (max-width:400px){
+  .landing-section .right-landing Image{
+      width:330px
+  }
+}
+@media screen and (max-width:325px){
+  .landing-section .right-landing Image{
+      display:none
+  }
+}
+
+@media screen and (max-width:1700px){
+  .landing-section{
+      margin-left:15vw;
+      margin-right:15vw
+  }
+}
+@media screen and (max-width:1130px){
+  .landing-section{
+      margin-left:5vw;
+      margin-right:5vw
+  }
+}
+@media screen and (max-width:800px){
+  .landing-section{
+      flex-direction:column;
+      justify-content:normal
+  }
+}
+
+@media screen and (max-width:800px){
+  .landing-section .left-landing{
+      display:flex;
+      flex-direction:column;
+      align-items:center
+  }
+}
+.landing-section .left-landing h1{
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+  color:#fff;
+  font-size:40px;
+  font-weight:700
+}
+@media screen and (max-width:800px){
+  .landing-section .left-landing h1{
+      text-align:center
+  }
+}
+.landing-section .left-landing p{
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+  color:#9d9d9d;
+  font-size:16px;
+  font-weight:400;
+  margin-top:-5px
+}
+@media screen and (max-width:1300px){
+  .landing-section .left-landing p{
+      width:25vw
+  }
+}
+@media screen and (max-width:800px){
+  .landing-section .left-landing p{
+      text-align:center;
+      width:90vw
+  }
 }
