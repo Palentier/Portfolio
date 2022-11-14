@@ -5,6 +5,7 @@
 
 :root {
   --bg-color: #161616;
+  --secondary-bg: #1B1B1B;
   --text-color: #f8f8f2;
 }
 body,
@@ -74,44 +75,14 @@ footer {
   margin-left: 20rem;
 }
 
-.landing-section {
-  margin-top: 20vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-left: 24vw;
-  margin-right: 24vw;
-  flex-direction: column;
+.landing-section{
+  margin-top:20vh;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  margin-left:24vw;
+  margin-right:24vw
 }
-
-.landing-section .right-landing Image{
-  width:500px;
-  -webkit-user-select:none;
-  -moz-user-select:none;
-  -ms-user-select:none;
-  user-select:none
-}
-@media screen and (max-width:800px){
-  .landing-section .right-landing Image{
-      margin-top:5vh
-  }
-}
-@media screen and (max-width:500px){
-  .landing-section .right-landing Image{
-      width:400px
-  }
-}
-@media screen and (max-width:400px){
-  .landing-section .right-landing Image{
-      width:330px
-  }
-}
-@media screen and (max-width:325px){
-  .landing-section .right-landing Image{
-      display:none
-  }
-}
-
 @media screen and (max-width:1700px){
   .landing-section{
       margin-left:15vw;
@@ -130,7 +101,33 @@ footer {
       justify-content:normal
   }
 }
-
+.landing-section .right-landing img{
+  width:500px;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none
+}
+@media screen and (max-width:800px){
+  .landing-section .right-landing img{
+      margin-top:5vh
+  }
+}
+@media screen and (max-width:500px){
+  .landing-section .right-landing img{
+      width:400px
+  }
+}
+@media screen and (max-width:400px){
+  .landing-section .right-landing img{
+      width:330px
+  }
+}
+@media screen and (max-width:325px){
+  .landing-section .right-landing img{
+      display:none
+  }
+}
 @media screen and (max-width:800px){
   .landing-section .left-landing{
       display:flex;
@@ -171,5 +168,50 @@ footer {
   .landing-section .left-landing p{
       text-align:center;
       width:90vw
+  }
+}
+.landing-section .left-landing button{
+  border:none;
+  outline:none;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+  font-size:14px;
+  font-weight:400;
+  color:#fff;
+  padding:10px 26px;
+  border-radius:5px;
+  cursor:pointer;
+  transition:all .3s ease;
+  margin-top:10px
+}
+
+
+.about-section{
+  background-color: var(--secondary-bg);
+  margin-top:-12px;
+  width:100vw
+}
+@media screen and (max-width:1830px){
+  .about-section{
+      margin-top:-30px
+  }
+}
+@media screen and (max-width:1550px){
+  .about-section{
+      margin-top:-60px
+  }
+}
+@media screen and (max-width:1015px){
+  .about-section{
+      margin-top:-70px;
+      padding-top:40px
+  }
+}
+@media screen and (max-width:830px){
+  .about-section{
+      margin-top:-100px;
+      padding-top:50px
   }
 }
