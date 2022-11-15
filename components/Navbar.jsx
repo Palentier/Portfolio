@@ -6,7 +6,7 @@ export default function Navbar() {
     <nav className="w-screen flex justify-between">
       <div className="navbar-left font-bold flex">
         <div className="navbar-logo">
-          <Image width={65} height={65} src="/newPalentierPurpleEyes.png" />
+          <Image width={65} height={65} src="/newPalentierPurpleEyes.png" draggable="false"/>
           <Link href="/">
             <h1 className="text-2xl"> Palentier </h1>
           </Link>
