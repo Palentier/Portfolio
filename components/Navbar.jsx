@@ -10,10 +10,10 @@ export default function Navbar() {
         <Link href="/"><h1 className="text-2xl"> Palentier </h1></Link>
         </div>
         <div className="navbar-items">
-          <div className="navbar-item">About Me</div>
-          <div className="navbar-item">Skills</div>
-          <div className="navbar-item">Projects</div>
-          <div className="navbar-item">Contact Me</div>
+          <div className="navbar-item transition duration-500 ease-in-out hover:text-[#B096D6]">About Me</div>
+          <div className="navbar-item transition duration-500 ease-in-out hover:text-[#B096D6]">Skills</div>
+          <div className="navbar-item transition duration-500 ease-in-out hover:text-[#B096D6]">Projects</div>
+          <div className="navbar-item transition duration-500 ease-in-out hover:text-[#B096D6]">Contact Me</div>
           
         </div>
       </div>
