@@ -6,7 +6,12 @@ export default function Navbar() {
     <nav className="w-screen flex justify-between">
       <div className="navbar-left font-bold flex">
         <div className="navbar-logo">
-          <Image width={65} height={65} src="/newPalentierPurpleEyes.png" draggable="false"/>
+          <Image
+            width={65}
+            height={65}
+            src="/newPalentierPurpleEyes.png"
+            draggable="false"
+          />
           <Link href="/">
             <h1 className="text-2xl"> Palentier </h1>
           </Link>
@@ -26,7 +31,6 @@ export default function Navbar() {
           </div>
         </div>
       </div>
-
       <div className="navbar-right">
         <Link target="_blank" href="https://github.com/palentier/portfolio">
           <button className="drop-shadow-2xl inline-flex items-center justify-center w-auto px-2 py-2 text-sm md:text-base font-bold leading-6 text-white bg-[#495C83] border border-transparent rounded-lg md:w-auto hover:bg-[#607BB0] transition duration-500 ease-in-out transform hover:-translate-y-1 focus-none">
