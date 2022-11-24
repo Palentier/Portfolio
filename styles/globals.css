@@ -8,6 +8,7 @@
   --secondary-bg: #1B1B1B;
   --text-color: #f8f8f2;
 }
+
 body,
 html {
   font-family: 'Raleway', sans-serif;
@@ -25,13 +26,12 @@ html {
   box-sizing: border-box;
 }
 
-.menu {  
+.menu {
   align-items: center;
   display: flex;
   height: 100vh;
   width: 100vw;
 }
-
 
 .menu-items {
   margin-left: clamp(4rem, 20vw, 48rem);
@@ -39,80 +39,87 @@ html {
   z-index: 2;
 }
 
-.menu[data-active-index="0"] > .menu-background-pattern {
+.menu[data-active-index="0"]>.menu-background-pattern {
   background-position: 0% -25%;
 }
 
-.menu[data-active-index="1"] > .menu-background-pattern {
+.menu[data-active-index="1"]>.menu-background-pattern {
   background-position: 0% -50%;
 }
 
-.menu[data-active-index="2"] > .menu-background-pattern {
+.menu[data-active-index="2"]>.menu-background-pattern {
   background-position: 0% -75%;
 }
 
-.menu[data-active-index="3"] > .menu-background-pattern {
+.menu[data-active-index="3"]>.menu-background-pattern {
   background-position: 0% -100%;
 }
 
-.menu[data-active-index="0"] > .menu-background-image {
+.menu[data-active-index="0"]>.menu-background-image {
   background-position: center 45%;
 }
 
-.menu[data-active-index="1"] > .menu-background-image {
+.menu[data-active-index="1"]>.menu-background-image {
   background-position: center 50%;
 }
 
-.menu[data-active-index="2"] > .menu-background-image {
+.menu[data-active-index="2"]>.menu-background-image {
   background-position: center 55%;
 }
 
-.menu[data-active-index="3"] > .menu-background-image {
+.menu[data-active-index="3"]>.menu-background-image {
   background-position: center 60%;
 }
 
 .menu-background-pattern {
-  background-image: radial-gradient(
-    rgba(255, 255, 255, 0.1) 9%, 
-    transparent 9%
-  );
+  background-image: radial-gradient(rgba(255, 255, 255, 0.1) 9%,
+      transparent 9%);
   background-position: 0% 0%;
   background-size: 12vmin 12vmin;
   height: 100vh;
   left: 0px;
   position: absolute;
   top: 0px;
-  transition: opacity 800ms ease, 
+  transition: opacity 800ms ease,
     background-size 800ms ease,
     background-position 800ms ease;
   width: 100vw;
   z-index: 1;
+  
+ 
 }
 
-.menu-items:hover ~ .menu-background-pattern {
+.menu-items:hover~.menu-background-pattern {
   background-size: 11vmin 11vmin;
   opacity: 0.5;
 }
 
+.menu-items:hover~.menu-background-image {
+  background-size: 100vmax;
+  opacity: 0.1;
+}
 
-.menu-items:hover > .menu-item {
+.menu-items:hover>.menu-item {
   opacity: 0.3;
 }
 
-.menu-items:hover > .menu-item:hover {
-  opacity: 1; 
+.menu-items:hover>.menu-item:hover {
+  opacity: 0.5;
 }
 
 .menu-item {
   color: white;
   cursor: pointer;
   display: block;
-  font-family: 'Ibarra Real Nova', serif;
-  font-size: clamp(3rem, 8vw, 8rem);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: clamp(3rem, 4vw, 8rem);
   padding: clamp(0.25rem, 0.5vw, 1rem) 0rem;
   text-decoration: none;
   transition: opacity 400ms ease;
 }
+
+
 
 nav {
   width: 100%;
@@ -123,6 +130,34 @@ nav {
   padding: 1em;
 }
 
+.navbar-left {
+  margin-left: 10rem;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  z-index: 200;
+}
+
+.navbar-items {
+  margin-left: 50rem;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-item {
+  display: flex;
+  align-items: center;
+  margin-right: 24px;
+  text-decoration: none;
+  cursor: pointer;
+  user-select: none;
+}
+
+
+
+
 
 .burger-menu {
   height: 100%;
@@ -132,12 +167,15 @@ nav {
   align-items: flex-start;
   justify-content: space-between;
   cursor: pointer;
+  margin-left: auto;
+  margin-right: 0;
+
 }
 
 .burger-bar {
   width: 4em;
   height: 0.5em;
-  background-color: rgb(235, 185, 255);
+  background-color: #495C83;
   border-radius: 0.5em;
 }
 
@@ -151,17 +189,17 @@ nav {
 }
 
 
-.burger-bar.clicked:nth-child(1){
+.burger-bar.clicked:nth-child(1) {
   transform: rotate(45deg) translate(0.75em, 1.25em);
   transition: ease-out 0.5s;
 }
 
-.burger-bar.clicked:nth-child(2){
+.burger-bar.clicked:nth-child(2) {
   transform: scale(0.1);
   transition: ease-out 0.5s;
 }
 
-.burger-bar.clicked:nth-child(3){
+.burger-bar.clicked:nth-child(3) {
   transform: rotate(135deg) translate(-0.5em, 1em);
   transition: ease-out 0.5s;
 }
@@ -170,3 +208,19 @@ nav {
   transform: rotate(0) translate(0);
   transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
 }
+
+.mobile {
+  display: none;
+}
+
+@media only screen and (max-device-width: 1200px) {
+  .mobile {
+    display: block;
+  }
+
+  .desktop {
+    display: none;
+  }
+}
+
+
