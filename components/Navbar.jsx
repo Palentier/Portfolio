@@ -24,18 +24,12 @@ export default function Navbar({}) {
   function handleHover(index) {
     if (!menu.current) return;
     menu.current.setAttribute("data-active-index", `${index}`);
-  }
+  };
 
-  const [anchorEl, setAnchorEl] = React.useState(null);
-  const open = Boolean(anchorEl);
-  const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
+
 
   return (
+    <div className="">
     <div className="desktop" style={{ width: "100%", height: "100vh" }}>
       <div className="navbar-left font-bold flex">
         <div className="navbar-logo">
@@ -67,6 +61,9 @@ export default function Navbar({}) {
           </div>
         </div>
       </div>
+      </div>
+
+  
 
       <div
         onClick={() => isMenuClicked && updateMenu()}
@@ -111,6 +108,6 @@ export default function Navbar({}) {
           </div>
         </div>
       </div>
-    </div>
+      </div>
   );
 }
