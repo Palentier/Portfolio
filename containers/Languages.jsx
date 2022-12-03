@@ -21,7 +21,7 @@ export default function Langs() {
             <Image src='/icons8-tailwindcss-100.png' width={65} height={65}/>
             </div>
             <div className='plnt__langs-effect'>
-            <Image ssrc='/icons8-react-100.png' width={65} height={65}/>
+            <Image src='/icons8-react-100.png' width={65} height={65}/>
             </div>
         </div>
     )
