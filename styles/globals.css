@@ -785,3 +785,16 @@ line-height: 55px;
   font-family: 'Raleway', sans-serif;
 color: #000;		
 }
+
+
+.plnt__langs-effect {
+  filter: grey;
+  -webkit-filter: grayscale(100%);
+  -webkit-transition: all .6s ease;
+  -webkit-backface-visibility: hidden;
+}
+
+.plnt__langs-effect:hover {
+  filter: none;
+  -webkit-filter: grayscale(0%);
+}
