@@ -4,14 +4,12 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import {
   Header,
-  Footer,
   Connect,
   Projects,
   Skills,
   About,
   Langs,
 } from "../containers";
-
 
 import Head from "../components/Head";
 import Navbar from "../components/Navbar";
@@ -137,7 +135,6 @@ export default function Home() {
       <Skills />
       <Projects />
       <Connect />
-      <Footer />
     </div>
   );
 }

@@ -1,4 +1,4 @@
-export default function Project({imgUrl, name, text}) {
+export default function Project({imgUrl, name, text, source}) {
     return(
         <div className="plnt__projects-container_project">
         <div className="plnt__projects-container_project-image">
@@ -9,7 +9,7 @@ export default function Project({imgUrl, name, text}) {
             <p>{name}</p>
             <h3>{text}</h3>
           </div>
-          <p>Source Code</p>
+          <p>{source}</p>
         </div>
       </div>
     )
