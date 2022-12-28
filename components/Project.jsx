@@ -1,4 +1,5 @@
-export default function Project({imgUrl, name, text, source}) {
+import Link from "next/link"
+export default function Project({imgUrl, name, text, source, link}) {
     return(
         <div className="plnt__projects-container_project">
         <div className="plnt__projects-container_project-image">

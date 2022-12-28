@@ -14,7 +14,7 @@ export default function Projects() {
         </div>
         <div className="plnt__project-container_groupB">
           <Project imgUrl='/opera_Jvpi2QiY2K.png' name="Nov 16, 2022" text="This Website" source='Source Code' />
-          <Project imgUrl='/i2oR6Xki.png' name="Jul 17, 2021" text="The Coding Society" source="Not open source" />
+          <Project imgUrl='/i2oR6Xki.png' name="Jul 17, 2021" text="The Coding Society"  source="Not open source" />
         </div>
       </div>
     </div>

@@ -1,4 +1,5 @@
 import Heading from '../components/Heading'
+import Link from 'next/link';
 export default function About() {
     return (
       <div className=" plnt__about section__margin"  id="about">
@@ -8,7 +9,7 @@ frameworks such as React.js and Next.js wherever feasible. " />
       </div>
       <div className=" plnt__about-heading">
         <h1 className="gradient__text">Get to know a little bit more about me.</h1>
-        <p>Let&apos;s Connect</p>
+        <Link href="#connect"><p>Let&apos;s Connect</p></Link>
       </div>
       <div className=" plnt__about-container">
         <Heading title="My Mission" text="As a self-taught developer, I strive to create each website with love and care, while also making them accessible for all mobile devices and visually appealing." />

@@ -23,7 +23,7 @@ export default function Skills() {
       <div className="plnt__skills section__padding" id='skills'>
         <div className="plnt__skills-heading">
           <h1 className="gradient__text">What am I working with?</h1>
-          <div className="p">Source Code</div>
+          <div className="p" style={{color: '#FF8A71'}}>These are just a few of the languages and libraries I'm currently working with</div>
         </div>
         <div className="plnt__skills-container">
         {skillsData.map((item, index) => (

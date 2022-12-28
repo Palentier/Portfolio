@@ -31,7 +31,7 @@ export default function Navbar() {
         </div>
       </div>
       <div className="plnt__navbar-sign">
-        <button type="button">Source Code</button>
+        <button type="button"><Link href="https://github.com/palentier/portfolio">Source Code</Link></button>
       </div>
       <div className="plnt__navbar-menu">
         {toggleMenu ? (
